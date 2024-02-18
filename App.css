@@ -1,0 +1,49 @@
+.whole{
+    background: cover;
+    background-color: azure;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:1rem;
+}
+.section{
+    background-color:white;
+    padding:5px;
+    border-radius:10px;
+    box-shadow:3px 3px  3px 2px #A7A8B4;
+    width:70%;
+    align-items:center;
+    margin:auto;
+    
+}
+.singleLine{
+    display:flex;
+    justify-content:space-between;
+    font-size:20px;
+    margin-top:0px;
+    
+}
+.singleLine .name{
+    color:#bbbea4;
+    padding-left:10%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.section .Paragraph{
+    font-size:18px;
+    margin-top:-3%;
+}
+li {
+    list-style-type: none;
+    gap:1rem;
+}
+@media screen and (min-width:768px){
+    .whole{
+        width:80%;
+        margin:auto;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:2rem;
+    }
+}
